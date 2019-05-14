@@ -27,16 +27,16 @@ module.exports = (create) => {
     if (process.env.WEBRTC_STAR_REMOTE_SIGNAL_DNS) {
       // test with deployed signalling server using DNS
       console.log('Using DNS:', maHSDNS)
-      ma1 = maGen(maHSDNS, 'QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo2a')
-      ma2 = maGen(maHSDNS, 'QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo2b')
+      ma1 = maGen(maHSDNS, 'W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py2a')
+      ma2 = maGen(maHSDNS, 'W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py2b')
     } else if (process.env.WEBRTC_STAR_REMOTE_SIGNAL_IP) {
       // test with deployed signalling server using IP
       console.log('Using IP:', maHSIP)
-      ma1 = maGen(maHSIP, 'QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo2a')
-      ma2 = maGen(maHSIP, 'QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo2b')
+      ma1 = maGen(maHSIP, 'W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py2a')
+      ma2 = maGen(maHSIP, 'W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py2b')
     } else {
-      ma1 = maGen(maLS, 'QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo2a')
-      ma2 = maGen(maLS, 'QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo2b')
+      ma1 = maGen(maLS, 'W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py2a')
+      ma2 = maGen(maLS, 'W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py2b')
     }
 
     before((done) => {

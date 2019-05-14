@@ -23,9 +23,9 @@ module.exports = (create) => {
     let ws2
     let ws3
 
-    const ma1 = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo3A'))
-    const ma2 = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo3B'))
-    const ma3 = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSooo3C'))
+    const ma1 = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py3A'))
+    const ma2 = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py3B'))
+    const ma3 = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Py3C'))
 
     before(async () => {
       sigS = await sigServer.start({ port: SERVER_PORT })

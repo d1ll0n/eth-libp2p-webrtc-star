@@ -28,10 +28,10 @@ describe('signalling', () => {
     return `/ip4/127.0.0.1/tcp/9090/ws/p2p-webrtc-star/ipfs/${id}`
   }
 
-  let c1mh = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSoooo1'))
-  let c2mh = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSoooo2'))
-  let c3mh = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSoooo3'))
-  let c4mh = multiaddr(base('QmcgpsyWgH8Y8ajJz1Cu72KnS5uo2Aa2LpzU7kinSoooo4'))
+  let c1mh = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Pyo1'))
+  let c2mh = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Pyo2'))
+  let c3mh = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Pyo3'))
+  let c4mh = multiaddr(base('W1p3KrTSzJXH3ujnGvNsYSP5bNvoUrfbmWfZDUnLH7Pyo4'))
 
   it('start and stop signalling server (default port)', async () => {
     const server = await sigServer.start()
